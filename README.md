@@ -7,6 +7,6 @@
 
 <p>
   <div align="left">
-    PROJECT DEVELOPMENT NOT YET STARTED
+    Project Development in Research and Planning Phase
   </div>
 </p>
