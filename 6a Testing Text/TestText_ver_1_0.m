@@ -1,0 +1,60 @@
+%% Script to examine NetCDF data formats and check for non-numeric values (chars only)
+clear all
+close all
+
+%% Define plain text variable types
+DataTypes = {'NC_Byte', 'NC_Char', 'NC_Short', 'NC_Int', 'NC_Float', 'NC_Double'};
+
+%% Test a good file
+%% Set file to test
+FileName = 'o3_surface_20180701000000.nc';                                      % Define our test file
+
+Contents = ncinfo(FileName);                                                    % Store the file content information in a variable
+FileID = netcdf.open(FileName,'NC_NOWRITE');                                    % Open file read only and create handle
+
+for idx = 0:size(Contents.Variables,2)-1                                        % Loop through each variable
+    % Read data type for each variable and store
+    [~, datatype(idx+1), ~, ~] = netcdf.inqVar(FileID,idx);
+end
+
+%% Display data types
+DataInFile = DataTypes(datatype)'
+
+%% Find character data types
+FindText = strcmp('NC_Char', DataInFile);
+
+%% Print results
+fprintf('Testing file: %s\n', FileName)
+if any(FindText)
+    fprintf('Error, text variables present:\n')
+else
+    fprintf('All data is numeric, continue analysis.\n')
+end
+
+%% #####
+
+%% Test File with Errors
+%% Set file to test
+    FileName = 'TestFileText.nc';                                               % Define our test file
+
+    Contents = ncinfo(FileName);                                                % Store the file content information in a variable
+    FileID = netcdf.open(FileName,'NC_NOWRITE');                                % Open file read only and create handle
+
+    for idx = 0:size(Contents.Variables,2)-1                                    % Loop through each variable
+        % Read data type for each variable and store
+        [~, datatype(idx+1), ~, ~] = netcdf.inqVar(FileID,idx);
+    end
+
+    %% Display data types
+    DataInFile = DataTypes(datatype)'
+
+    %% Find character data types
+    FindText = strcmp('NC_Char', DataInFile);
+
+    %% Print results
+    fprintf('Testing file: %s\n', FileName)
+    if any(FindText)
+        fprintf('Error, text variables present:\n')
+    else
+        fprintf('All data is numeric, continue analysis.\n')
+    end

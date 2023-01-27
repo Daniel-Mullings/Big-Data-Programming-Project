@@ -1,0 +1,10 @@
+5011CEM - Big Data Programming Project - 2223JANMAY
+Logbook
+
+Entry No.	Date		Version	No.	Length (Hrs)	Task
+
+1		27/01/2023	ver_1_0		+ 2.5		Clone/Reuploaded "5011CEM-2223JANMAY" repo to personal GitHub profile
+						+ 5.0		Download MatLab; Parallel Processing and Statistics and Machine Learning Toolboxes
+						+ 2.5		Configure Git to commit to repo from MatLab
+						+ 2.5		Create Gantt chart to plan project timeline
+						= 12.5
