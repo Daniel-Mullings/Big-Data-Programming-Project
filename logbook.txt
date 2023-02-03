@@ -8,3 +8,8 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 						+ 2.5		Configure Git to commit to repo from MatLab
 						+ 2.5		Create Gantt chart to plan project timeline
 						= 12.5
+
+2		03/02/2023	ver_1_1		+ 2.5		2b Memory/MemorySaving_ver_1_0.m - Implement code sections as individual scripts
+				ver_1_2		+ 2.5		2b Memory/MemorySaving_ver_1_1.m - Update individual scripts to callable functions w/ Parameters
+						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
+						= 6.0
