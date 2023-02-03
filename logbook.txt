@@ -13,3 +13,4 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 				ver_1_2		+ 2.5		2b Memory/MemorySaving_ver_1_1.m - Update individual scripts to callable functions w/ Parameters
 						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
 						= 6.0
+

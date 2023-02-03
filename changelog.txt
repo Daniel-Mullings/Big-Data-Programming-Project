@@ -49,3 +49,18 @@ Changelog (* Modified, + Added, - Removed, ):
 + 2b Memory/LoadHours_ver_1_1.m
 + 2b Memory/MemorySaving_ver_1_1.m
 + 2b Memory/Reportresults_ver_1_1.m
+
+### Project Version: 1.2 ###
+
+Version Description:
+- Update separate script files to separate function files w/ parameters
+- Functions called from "2b Memory/MemorySaving_ver_1_2.m", root of program for "2b Memory"
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 2b Memory/ExploreData_ver_1_0.m -> 2b Memory/ExploreData_ver_1_2.m
+* 2b Memory/LoadAllData_ver_1_1.m -> 2b Memory/LoadAllData_ver_1_2.m
+* 2b Memory/LoadAllHours_ver_1_1.m -> 2b Memory/LoadAllHours_ver_1_2.m
+* 2b Memory/LoadHours_ver_1_1.m -> b Memory/LoadHours_ver_1_2.m
+* 2b Memory/MemorySaving_ver_1_1.m -> 2b Memory/MemorySaving_ver_1_2.m
+* 2b Memory/Reportresults_ver_1_1.m -> 2b Memory/Reportresults_ver_1_2.m
