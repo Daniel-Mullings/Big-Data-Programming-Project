@@ -86,3 +86,14 @@ Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 3a Sequential/SequentialProcessing_ver_2_0.m -> 3a Sequential/SequentialProcessing_ver_2_1.m
 * 3a Sequential/subSequentialProcessing_ver_2_1.m
+
+### Project Version 2.2 ###
+
+Version Description:
+- Update variables "NumHours, Num2Process, PoolSize" in "3b Parallel/ParallelProcessing_ver_1_0.m"
+- Enables definition of "for" loop iteration parameters to process specific hours and data sub-sets from full dataset w/ multiple processors (Workers)
+- Enables measurement of parallel processing performance
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 3b Parallel/ParallelProcessing_ver_1_0.m -> 3b Parallel/ParallelProcessing_ver_2_2.m
