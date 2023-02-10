@@ -1,21 +1,17 @@
 <h2>
   5011CEM - Big Data Programming Project - 2223JANMAY
 </h2>
-<h4>Project Version: 1.2</h4>
+<h4>Project Version: 2.0</h4>
 <h4>Version Description: </h4>
 
 ```
-- Update separate script files to separate function files w/ parameters
-- Functions called from "2b Memory/MemorySaving_ver_1_2.m", root of program for "2b Memory"
+- Create variables "Hours, DataSubset" in "3a Sequential/SequentialProcessing_ver_2_0.m".
+- Enables definition of "for" loop iteration parameters to process specific hours and data sub-sets from full dataset
+- Enables measurement of sequential processing performance
 ```
 <h4>Changelog (* Modified, + Added, - Removed): </h4>
 
 ```
 * README.md
-* 2b Memory/ExploreData_ver_1_0.m -> 2b Memory/ExploreData_ver_1_2.m
-* 2b Memory/LoadAllData_ver_1_1.m -> 2b Memory/LoadAllData_ver_1_2.m
-* 2b Memory/LoadAllHours_ver_1_1.m -> 2b Memory/LoadAllHours_ver_1_2.m
-* 2b Memory/LoadHours_ver_1_1.m -> b Memory/LoadHours_ver_1_2.m
-* 2b Memory/MemorySaving_ver_1_1.m -> 2b Memory/MemorySaving_ver_1_2.m
-* 2b Memory/Reportresults_ver_1_1.m -> 2b Memory/Reportresults_ver_1_2.m
+* 3a Sequential/SequentialProcessing_ver_1_0.m -> 3a Sequential/SequentialProcessing_ver_2_0.m
 ```

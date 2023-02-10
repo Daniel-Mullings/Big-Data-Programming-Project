@@ -14,3 +14,9 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
 						= 6.0
 
+3		10/02/2023	ver_2_0		+ 2.5		3a Sequential/SequentialProcessing_ver_1_0.m - Create variables "Hours, DataSubset" to easily define iteration parameters of "for" loops to process specific hours and data sub-sets from full dataset
+				ver_2_1		+ 2.5		3a Sequential/SequentialProcessing_ver_2_0.m - Create separate function file "3a Sequential/subSequentialProcessing_ver2_1" for existing code
+						+ 1.0		3a Sequential/SequentialProcessing_ver_2_0.m - Update existing script to call function
+				ver_2_2		+ 2.5		3b Parallel/ParallelProcessing_ver_2_0.m - Update variables "NumHours", Num2Process, PoolSize" to process 25 hours of data sub-sets of 5000 data, w/ 4 processors (Workers)
+				ver_2_3		+ 2.5		3b Parallel/ParallelProcessing_ver_2_2.m - Create separate function file "3b Parallel/subParallelProcessing_ver_2_3.m" for existing code
+						= 11.0

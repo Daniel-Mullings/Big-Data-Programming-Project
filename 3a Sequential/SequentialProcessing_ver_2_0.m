@@ -25,7 +25,11 @@ StartLon = 1;                                                                   
 NumLon = 700;                                                                   % Number of longitude locations to load
 tic
 
-for NumHour = 1:25                                                              % Loop through each hour
+Hours = 3;                                                                      % Hours to process
+DataSubset = 150;                                                               % Data sub-set size
+                                                                                % (Data sub-sets are in units of 50 data)
+
+for NumHour = 1:Hours                                                           % Loop through each hour
     fprintf('Processing hour %i\n', NumHour)
     DataLayer = 1;                                                              % Which 'layer' of the array to load 
                                                                                 % the model data into
@@ -45,7 +49,8 @@ for NumHour = 1:25                                                              
     %% Sequential analysis    
     t1 = toc;
     t2 = t1;
-    for idx = 1: size(Data2Process,1)                                           % Step through each data location to 
+
+    for idx = 1:DataSubset                                                      % Step through each data location to 
                                                                                 % process the data
         
         % The analysis of the data creates an 'ensemble value' for each
