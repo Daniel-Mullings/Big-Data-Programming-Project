@@ -75,3 +75,14 @@ Version Description:
 Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 3a Sequential/SequentialProcessing_ver_1_0.m -> 3a Sequential/SequentialProcessing_ver_2_0.m
+
+### Project Version 2.1 ###
+
+Version Description:
+- Create separate function file "Sequential/subSequentialProcessing_ver_2_1.m" for code in "3a Sequential/SequentialProcessing_ver_2_0.m"
+- Function called from "Sequential/SequentialProcessing_ver_2_1.m", root of program for "3a Sequential"
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 3a Sequential/SequentialProcessing_ver_2_0.m -> 3a Sequential/SequentialProcessing_ver_2_1.m
+* 3a Sequential/subSequentialProcessing_ver_2_1.m
