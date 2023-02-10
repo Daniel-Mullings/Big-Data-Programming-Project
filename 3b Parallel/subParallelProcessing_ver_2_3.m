@@ -1,15 +1,15 @@
-function ParallelProcessing
+%% Function: Process specified subset of data for specified hours in Parallel
+% Input: "FileName" = File containing data, 
+% "NumHours" = Number of hours to process data for, 
+% "Num2Process" = Size of data sub-set to process per hour (Data sub-sets are in units of 50 data), 
+% "PoolSize" =  Number of processors to use in parallel
+% Output: None
+function[] = subParallelProcessing_ver_2_3(FileName, NumHours, Num2Process, PoolSize)
     %% 1: Load Data
-    clear all
-    close all
-    
-    FileName = 'o3_surface_20180701000000.nc';
-    
     Contents = ncinfo(FileName);
     
     Lat = ncread(FileName, 'lat');
     Lon = ncread(FileName, 'lon');
-    NumHours = 25;
     
     %% 2: Processing parameters
     % ##  provided by customer  ##
@@ -32,7 +32,6 @@ function ParallelProcessing
     % We use an index named 'NumHour' in our loop
     % The section 'parallel processing' will process the data location one
     % after the other, reporting on the time involved.
-    Num2Process = 5000;
     Steps = 100;
     tic
     
@@ -68,7 +67,7 @@ function ParallelProcessing
         
     %% Parallel Analysis
         %% 7: Create the parallel pool and attach files for use
-        PoolSize = 4 ;                                                              % Define the number of processors to use in parallel
+                                                                 %
         if isempty(gcp('nocreate'))
             parpool('local',PoolSize);
         end
@@ -124,7 +123,6 @@ function ParallelProcessing
     fprintf('Total processing time for %i workers = %.2f s\n', PoolSize, sum(T3));
     
     %% 11: ### PROCESSING COMPLETE DATA NEEDS TO BE SAVED  ###
-    
     function nUpdateWaitbar(~) % nested function
         waitbar(p/N, hWaitBar,  sprintf('Hour %i, %.3f complete, %i out of %i', idxTime, p/N, p, N));
         p = p + 1;
