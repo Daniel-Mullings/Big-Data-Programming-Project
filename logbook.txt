@@ -20,3 +20,15 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 				ver_2_2		+ 2.5		3b Parallel/ParallelProcessing_ver_2_0.m - Update variables "NumHours", Num2Process, PoolSize" to process 25 hours of data sub-sets of 5000 data, w/ 4 processors (Workers)
 				ver_2_3		+ 2.5		3b Parallel/ParallelProcessing_ver_2_2.m - Create separate function file "3b Parallel/subParallelProcessing_ver_2_3.m" for existing code
 						= 11.0
+
+4		11/02/2023	ver_2_3		+ 15.0		3a Sequential/subSequentialProcessing_ver2_1 - Run to measure sequential processing performance (i.e. Processing Time) of 250 and 5000 data sub-sets
+						+ 15.0		3b Parallel/subParallelProcessing_ver_2_3.m - Run to measure parallel processing performance (i.e. Processing Time) of 250 and 5000 data sub-sets using 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 and 12 processors (Workers)
+						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
+						= 31.0
+
+5		12/02/2023	ver_2_4		+ 1.0		3c Plotting/Graphs_ver_1_0.m - Update variables "x1Vals, y1Vals, x2Vals, y2Vals" to plot values from processing 250 and 500 data sub-sets in sequential and parallel
+				ver_2_5		+ 2.5		3c Plotting/Graphs_ver_2_4.m - Create separate function file "3c Plotting/subGraphs_ver_2_5.m" for existing code
+						+ 1.0		3c Plotting/Graphs_ver_2_4.m - Update existing script to call function
+						+ 1.0		3c Plotting/Graphs_ver_2_4.m - Run to generate line plot graphs w/ updated variable values "x1Vals, y1Vals, x2Vals, y2Vals"
+						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
+						= 6.5

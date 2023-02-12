@@ -4,8 +4,8 @@ close all
 
 %% Show two plots on different y-axes
 % 250 data processed
-x1Vals = [2, 3, 4, 5, 6, 7];
-y1Vals = [65, 56, 47, 44, 40, 39];
+x1Vals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+y1Vals = [58, 32, 23, 20, 18, 17, 16, 15, 15, 14, 15, 15];
 figure(1)
 yyaxis left
 plot(x1Vals, y1Vals, '-bd')
@@ -14,8 +14,8 @@ ylabel('Processing Time (Seconds)')
 title('Processing Time vs Number of Processors')
 
 % 5,000 data processed
-x2Vals = [2, 3, 4, 5, 6, 7, 8];
-y2Vals = [1560, 1077, 945, 838, 852, 725, 707];
+x2Vals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+y2Vals = [1624, 855, 606, 480, 407, 361, 325, 302, 282, 266, 257, 252];
 figure(1)
 yyaxis right
 plot(x2Vals, y2Vals, '-rx')

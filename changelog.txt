@@ -108,3 +108,14 @@ Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 3b Parallel/ParallelProcessing_ver_2_2.m -> 3b Parallel/ParallelProcessing_ver_2_3.m
 * 3b Parallel/subParallelProcessing_ver_2_3.m
+
+### Project Version 2.4 ###
+
+Version Description:
+- Update variables "x1Vals, y1Vals, x2Vals, y2Vals" in "3c Plotting/Graphs_ver_1_0.m"
+- Enables generating line plot graph of values
+- Enables comparison of sequential vs parallel processing performance
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 3c Plotting/Graphs_ver_1_0.m -> 3c Plotting/Graphs_ver_2_4.m
