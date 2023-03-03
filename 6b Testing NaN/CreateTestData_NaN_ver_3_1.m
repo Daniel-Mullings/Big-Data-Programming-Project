@@ -13,7 +13,9 @@ ModelNames = {C.Variables(1:8).Name};
 BadData = NaN(700,400,1);
 
 %% Write to *.nc file
-Hour2Replace = 12;
+Hour2Replace1 = 1;
+Hour2Replace2 = 2;
 for idx = 1:8
-    ncwrite(NewFileName, ModelNames{idx}, BadData, [1, 1, Hour2Replace]);
+    ncwrite(NewFileName, ModelNames{idx}, BadData, [1, 1, Hour2Replace1]);
+    ncwrite(NewFileName, ModelNames{idx}, BadData, [1, 1, Hour2Replace2]);
 end

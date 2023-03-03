@@ -8,7 +8,7 @@ close all
 NaNErrors = 0;
 
 %% Set file to test
-FileName = 'o3_surface_20180701000000.nc';                                      % Define our test file
+FileName = 'TestFileNaN.nc';                                                    % Define our test file
 
 Contents = ncinfo(FileName);                                                    % Store the file content information in a variable
 
