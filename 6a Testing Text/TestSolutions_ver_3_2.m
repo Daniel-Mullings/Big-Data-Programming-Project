@@ -9,7 +9,7 @@ NaNErrors = 0;
 
 %% Set file to test
 FileName = 'TestFileNaN.nc';                                                    % Define our test file
-% FileName = 'o3_surface_20180701000000.nc';                                    % Un-rem this line to see what happens 
+FileName = 'o3_surface_20180701000000.nc';                                      % Un-rem this line to see what happens
                                                                                 % with good data
 
 Contents = ncinfo(FileName);                                                    % Store the file content information in a variable
@@ -32,7 +32,7 @@ for idxHour = 1:25
         %% Display warning
         fprintf('NaNs present\n')
         ErrorModel = find(isnan(Data), 1, 'first');
-
+        
         %% Find first error:
         fprintf('Analysis for hour %i is invalid, NaN errors recorded in model %s\n',...
             idxHour, Contents.Variables(ErrorModel).Name)

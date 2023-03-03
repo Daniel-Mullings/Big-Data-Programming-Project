@@ -156,3 +156,16 @@ Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 6b Testing NaN/CreateTestData_NaN_ver_1_0.m -> 6b Testing NaN/CreateTestData_NaN_ver_3_1.m
 * 6b Testing NaN/TestNan_ver_1_0.m -> 6b Testing NaN/TestNan_ver_3_1.m
+
+### Project Version 3.2 ###
+
+Version Description:
+- Update variable value "FileName" in "6a Testing Text/TestSolutions_ver_1_0.m"
+- Enables testing printing of error messages to command window when testing erroneous dataset
+- Update variable value "DataFileName" in "Testing Text/TestSolutionsWithLogFile_ver_1_0.m"
+- Enables testing writing of error messages to log files when testing erroneous dataset
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 6a Testing Text/TestSolutions_ver_1_0.m -> 6a Testing Text/TestSolutions_ver_3_2.m
+* 6a Testing Text/TestSolutionsWithLogFile_ver_1_0.m -> 6a Testing Text/TestSolutionsWithLogFile_ver_3_2.m
