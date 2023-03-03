@@ -32,3 +32,16 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 						+ 1.0		3c Plotting/Graphs_ver_2_4.m - Run to generate line plot graphs w/ updated variable values "x1Vals, y1Vals, x2Vals, y2Vals"
 						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
 						= 6.5
+
+6		24/02/2023	ver_2_5		+ 5.0		Generate SMART (Specific, Measurable, Achievable, Relevant, Time-bound) targets
+						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
+						= 6.0
+
+7		03/03/2023	ver_3_0		+ 2.5		6a Testing Text/CreateTestData_Text_ver_1_0.m - Create/update variables "Model2Change1, Model2Change2" to create erroneous dataset file "TestyTest.nc"
+						+ 2.5		6a Testing Text/TestText_ver_1_0.m - Update variable "FileName" to test "TestyTest.nc" dataset for text data instead of numerical data
+				ver_3_1		+ 2.5		6b Testing NaN/CreateTestData_NaN_ver_1_0.m - Create/update variables "Hour2Replace1, Hour2Replace2" to create erroneous dataset file "6b Testing NaN/TestFileNaN.nc"
+						+ 2.5		6b Testing NaN/TestNan_ver_1_0.m - Update variable "FileName" to test "6b Testing NaN/TestFileNaN.nc" dataset for NaN data instead of numerical data
+				ver_3_2		+ 2.5		6a Testing Text/TestSolutions_ver_1_0.m - Update variables "FileName" to print error messages to Command window when testing erroneous dataset
+						+ 2.5		6a Testing NaN/TestSolutionsWithLogFile_ver_1_0.m - Update variables "FileName" to write error messages to Command window when testing erroneous dataset
+						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
+						= 16.0
