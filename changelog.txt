@@ -222,3 +222,14 @@ Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 3a Sequential/SequentialProcessing_ver_4_2.m -> 3a Sequential/SequentialProcessing_ver_4_4.m
 + SequentialProcessing_TestingLogfile.txt
+
+### Project Version 4.5 ###
+
+Version Description:
+- Update script in "3b Parallel/ParallelProcessing_ver_4_3.m" to write/amend "Results" from function call "3b Parallel/subParallelProcessing_ver_4_1.m" to log file "SequentialProcessing_TestingLogfile.txt"
+- Create/update log file "ParallelProcessing_TestingLogfile.txt" w/"Results" from automated testing
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 3b Parallel/ParallelProcessing_ver_4_3.m -> 3b Parallel/ParallelProcessing_ver_4_5.m
++ ParallelProcessing_TestingLogfile.txt

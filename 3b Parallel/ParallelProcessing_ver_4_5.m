@@ -66,3 +66,18 @@ end
 legend(DataLabels);                                                             % Legend, multiple lines displaying results
 
 hold off;                                                                       % Discard current graph for new data entry  
+
+%% Log results as logfile
+% Open log file
+LogFileName = 'ParallelProcessing_TestingLogfile.txt';
+LogID = fopen(LogFileName, 'a');
+
+% Write log to logfile
+fprintf(LogID, '[%s] Parallel Processing: Processing Time vs Data Sub-set Size w/ Dynamic Processor (Worker) Count (Results Table):\n', ...
+    datestr(now, 0));
+fprintf(LogID, '[%s] Record Structure   : {[Processor (Worker) Count)], [Data Sub-set Size], [Processing Time (Seconds)]}\n', ...
+    datestr(now, 0));
+for idx = 1:size(Results)
+    fprintf(LogID, '# -------------------- %d, %d, %.2f\n', Results(idx, 1), Results(idx, 2), Results(idx, 3));
+end
+fprintf(LogID, '\n');
