@@ -28,3 +28,17 @@ fprintf('Sequential Processing: Data Sub-set Size vs Processing Time (Results Ta
 fprintf('----------------------------------------------------------------------------\n\n');
 disp(ResultsTable);
 fprintf('----------------------------------------------------------------------------\n');
+
+%% Plot results as graph
+% Get data for plotting
+x = Results(:, 1);                                                              % X-axis data sub-set size
+y = Results(:, 2);                                                              % Y-axis processing time (Seconds)
+
+% Plot results
+plot(x, y, 'o-');                                                               % Plot x and y with points decorated with 'o'
+
+% Add axis labels, title, and legend
+xlabel('Data Sub-set');                                                         % X-axis label
+ylabel('Processing Time (Seconds)');                                            % Y-axis label
+title(sprintf('Processing Time vs Data Sub-set for %d Hours %d - %d', Hours));  % Graph title
+legend('Results');                                                              % Legend, single line displaying results                                                                      

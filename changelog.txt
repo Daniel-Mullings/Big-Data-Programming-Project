@@ -193,3 +193,12 @@ Changelog (* Modified, + Added, - Removed, ):
 * README.md
 * 3b Parallel/ParallelProcessing_ver_2_3.m -> 3b Parallel/ParallelProcessing_ver_4_1.m
 * 3b Parallel/subParallelProcessing_ver_2_3.m -> 3b Parallel/subParallelProcessing_ver_4_1.m
+
+### Project Version 4.2 ###
+
+Version Description:
+- Update script in "3a Sequential/SequentialProcessing_ver_4_0.m" to plot "Results" from function call "3a Sequential/subSequentialProcessing_ver_4_0" as line plot graph
+
+Changelog (* Modified, + Added, - Removed, ):
+* README.md
+* 3a Sequential/SequentialProcessing_ver_4_0.m -> 3a Sequential/SequentialProcessing_ver_4_2.m
