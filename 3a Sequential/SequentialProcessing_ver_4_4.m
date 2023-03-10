@@ -41,4 +41,17 @@ plot(x, y, 'o-');                                                               
 xlabel('Data Sub-set');                                                         % X-axis label
 ylabel('Processing Time (Seconds)');                                            % Y-axis label
 title(sprintf('Processing Time vs Data Sub-set for %d Hours %d - %d', Hours));  % Graph title
-legend('Results');                                                              % Legend, single line displaying results                                                                      
+legend('Results');                                                              % Legend, single line displaying results
+
+%% Log results as logfile
+% Open log file
+LogFileName = 'SequentialProcessing_TestingLogfile.txt';
+LogID = fopen(LogFileName, 'a');
+
+% Write log to logfile
+fprintf(LogID, '[%s] Sequential Processing: Processing Time vs Data Sub-set Size (Results Table):\n', datestr(now, 0));
+fprintf(LogID, '[%s] Record Structure     : {[Data Sub-set Size], [Processing Time (Seconds)]}\n', datestr(now, 0));
+for idx = 1:size(Results)
+    fprintf(LogID, '# -------------------- %d, %.2f\n', Results(idx, 1), Results(idx, 2));
+end
+fprintf(LogID, '\n');

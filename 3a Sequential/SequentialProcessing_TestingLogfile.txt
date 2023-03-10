@@ -1,0 +1,5 @@
+[17-Mar-2023 00:49:57] Sequential Processing: Processing Time vs Data Sub-set Size (Results Table):
+[17-Mar-2023 00:49:57] Record Structure     : {[Data Sub-set Size], [Processing Time (Seconds)]}
+# -------------------- 50, 58.33
+# -------------------- 150, 78.95
+# -------------------- 1500, 505.35
