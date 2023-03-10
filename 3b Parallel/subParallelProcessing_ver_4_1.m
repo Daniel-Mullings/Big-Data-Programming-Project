@@ -4,7 +4,7 @@
 % "Num2Process" = Size of data sub-set to process per hour (Data sub-sets are in units of 50 data), 
 % "PoolSize" =  Number of processors to use in parallel
 % Output: None
-function[] = subParallelProcessing_ver_2_3(FileName, NumHours, Num2Process, PoolSize)
+function[RunTime] = subParallelProcessing_ver_4_1(FileName, NumHours, Num2Process, PoolSize)
     %% 1: Load Data
     Contents = ncinfo(FileName);
     
@@ -113,6 +113,7 @@ function[] = subParallelProcessing_ver_2_3(FileName, NumHours, Num2Process, Pool
                                                                                     % this hour of data
     
         fprintf('Parallel processing time for hour %i : %.1f s\n', idxTime, T3(idxTime))
+        RunTime = T3(idxTime);
         
     end                                                                             % End time loop
     T2 = toc;
