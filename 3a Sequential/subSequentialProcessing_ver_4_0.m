@@ -5,7 +5,7 @@
 % "startDataSubset" = Start point of data sub-set (Data sub-sets are in units of 50 data), 
 % "endDataSubset" = End point of data sub-set
 % Output: None
-function[] = subSequentialProcessing_ver_2_1(FileName, Hours, DataSubset)
+function[RunTime] = subSequentialProcessing_ver_4_0(FileName, Hours, DataSubset)
 
     Contents = ncinfo(FileName);
     
@@ -75,4 +75,5 @@ function[] = subSequentialProcessing_ver_2_1(FileName, Hours, DataSubset)
     tSeq = toc;
     
     fprintf('Total time for sequential processing = %.2f s\n\n', tSeq)
+    RunTime = tSeq;
 end

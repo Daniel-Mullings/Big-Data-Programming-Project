@@ -45,3 +45,13 @@ Entry No.	Date		Version	No.	Length (Hrs)	Task
 						+ 2.5		6a Testing NaN/TestSolutionsWithLogFile_ver_1_0.m - Update variables "FileName" to write error messages to Command window when testing erroneous dataset
 						+ 1.0		Review/update Gannt chart to plan project timeline for following week (As released)
 						= 16.0
+
+8		10/03/2023	ver_4_0		+ 2.5		3a Sequential/SequentialProcessing_ver_2_1.m - Update script to automatically, iteratively test processing performance of different data sub-set sizes and store/display results as a table
+						+ 2.5		3a Sequential/subSequentialProcessing_ver_2_1.m - Update function to return results of processing different data sub-set size using variable output parameter "Results"
+				ver_4_1		+ 2.5		3b Parallel/ParallelProcessing_ver_2_3.m - Update script to automatically, iteratively test processing performance of different data sub-set sizes w/ multiple processors (Workers) and store/display results as a table
+						+ 2.5		3b Parallel/subParallelProcessing_ver_2_3.m - Update function to return results of processing different data sub-set size using variable output parameter "Results"
+				ver_4_2		+ 2.5		3a Sequential/SequentialProcessing_ver_4_0.m - Update script to automatically generate line plot graph of results
+				ver_4_3		+ 2.5		3b Parallel/ParallelProcessing_ver_4_1.m - Update script to automatically generate line plot graph of results
+				ver_4_4		+ 2.5		3a Sequential/SequentialProcessing_ver_4_2.m - Update script to write results to "SequentialProcessing_TestingLogfile.txt"
+				ver_4_5		+ 2.5		3b Parallel/ParallelProcessing_ver_4_3.m - Update script to write results to "ParallelProcessing_TestingLogfile.txt"
+						= 20.0

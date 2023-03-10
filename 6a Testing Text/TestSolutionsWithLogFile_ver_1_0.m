@@ -4,22 +4,12 @@
 clear all
 close all
 
-%% Get user write or append to log file preference
-%Get user input
-clearLogFile = input("Would you like to clear current log file (Y/N): ", 's');
-%Set write to log file mode dependent on user input
-if clearLogFile == 'Y' || clearLogFile == 'y'
-    logFileWriteMode = 'w';
-else
-    logFileWriteMode = 'a';
-end
-
-%% Test file with Errors
+%% Test File with Errors
 NaNErrors = 0;
 
 %% Set file to test
 DataFileName = 'TestFileNaN.nc';                                                % Define our test file
-DataFileName = 'o3_surface_20180701000000.nc';                                  % Un-rem this line to see what happens 
+% FileName = 'o3_surface_20180701000000.nc';                                    % Un-rem this line to see what happens 
                                                                                 % with good data
 
 Contents = ncinfo(DataFileName);                                                % Store the file content information in a variable
@@ -29,7 +19,7 @@ LogFileName = 'AnalysisLog.txt';
 
 % Create new log file, 'w' replaces the file if present. To continually
 % append, use 'a'
-LogID = fopen('AnalysisLog.txt', logFileWriteMode);
+LogID = fopen('AnalysisLog.txt', 'w');
 fprintf(LogID, '%s: Starting analysis of %s\n', datestr(now, 0), DataFileName);
 
 StartLat = 1;
@@ -63,8 +53,7 @@ for idxHour = 1:25
     end
     
 end
-fprintf(LogID, '\n');                                                           %Insert newline between newly appended log entries
-fclose(LogID);
+ fclose(LogID);
 
 if ~NaNErrors
     fprintf('No errors!\n')
